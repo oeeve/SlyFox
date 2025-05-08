@@ -2,7 +2,8 @@
 
 <div align="center">
   <a href="https://github.com/oeeve/SlyFox">
-    <img src="media/Fox_b.webp" alt="Logo" width="450">
+    <img src="media/Fox_b.webp" alt="Logo" width="450"> </a> <br>
+    <a href="https://doi.org/10.5281/zenodo.15364530"><img src="https://zenodo.org/badge/979958196.svg" alt="DOI"></a>
   </a>
 <br><br>
   <p align="center">
@@ -19,9 +20,11 @@
 </div>
 
 
+
+
 <!-- ABOUT -->
 <a name="about"></a>
-## SlyFox IoT Sleuth
+## SlyFox IoT Sleuth 
 Part of UC3BPR20 2025 - Acquisition and Analysis of Forensic Artefacts in a Smart Home Environment: A Study in IoT Forensics.
 
 The [SlyFox IoT Sleuth (SFHPCBA01)](https://github.com/oeeve/SlyFox) prototype has been developed as a forensic acquisition tool for Homey Pro (and other RPI CM4-based devices), based on the acquisition process described in [github.com/oeeve/UC3BPR20](https://github.com/oeeve/UC3BPR20).

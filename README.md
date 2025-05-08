@@ -3,7 +3,7 @@
 <div align="center">
   <a href="https://github.com/oeeve/SlyFox">
     <img src="media/Fox_b.webp" alt="Logo" width="450"> </a> <br>
-    <a href="https://doi.org/10.5281/zenodo.15364530"><img src="https://zenodo.org/badge/979958196.svg" alt="DOI"></a>
+    <a href="https://doi.org/10.5281/zenodo.15364530"><img src="https://zenodo.org/badge/979958196.svg" alt="DOI">
   </a>
 <br><br>
   <p align="center">

@@ -85,23 +85,26 @@ A comprehensive IoT forensics dataset based on a purpose-built testbed consistin
 
 | ID     | Model                   | Description                                                                                                                                          | DS  |
 | ------ | ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | --- |
-| P1, P2 | Hirose DF40C-100DS-0.4v | Hirose 100-pin connectors, used by the CM4.                                                                                                          | [1] |
+| P1,P2  | DF40C-100DS-0.4V(51)    | Hirose 100-pin connectors, used by the CM4.                                                                                                          | [1] |
 | J1     | TE 2345986-1            | USB-C connector to interface with host / lab PC.                                                                                                     | [2] |
 | SW1    | CL-SB-12B               | Latching-switch to pull \texttt{nRPIBOOT} to ground and force eMMC USB boot.                                                                         | [3] |
-| R4 R5  | ERJ-UP6D5101V           | 0603 5k1 pulldown resistors. Set to keep CC1 and CC2 on J1 permanent low. This configuration defines J1 as a device-only, USB 2.0 only interface.    | [4] |
-| C1     | EEH-ZK1V331P            | 330 µF electrolyte PHA capacitor. Inrush protection and bulk decoupling on VBUS, required on USB downstream devices.                                 | [5] |
-| U1     | 74LVC1G07               | Open drain and voltage-level controller. When `PI_LED_nPWR` is low, it will pull to ground and activate LED 1 / 2.                                   | [6] |
-| LED1   | SML-E12RWT86            | 0603 LED. Connected to U1 and `PI LED nPWR` CM4's power signal. Lights red when CM4 is powered on.                                                   | [7] |
-| LED2   | SML-E12GWT86            | 0603 LED. Connected to U2 and `PI nLED Activity` CM4's storage access indicator, blinking green when the eMMC is read or written to.                 | [7] |
-| LED3   | SML-E12GWT86            | 0603 LED. Connected to ground through SW1, and lights green when \texttt{nRPIBOOT} is pulled low, thus set in USB boot mode.                         | [7] |
+| R1,R2,R3  | CRCW06031K00FKEAC    | 0603 1K resistors.                                                                                                                                   | [4] |
+| R4,R5  | CRCW06035K11FKEAC       | 0603 5k1 pulldown resistors. Set to keep CC1 and CC2 on J1 permanent low. This configuration defines J1 as a device-only, USB 2.0 only interface.    | [5] |
+| C1     | 6SVPC330M               | 330 µF electrolyte PHA capacitor. Inrush protection and bulk decoupling on VBUS, required on USB downstream devices.                                 | [6] |
+| U1,U2  | 74LVC1G07               | Open drain and voltage-level controller. When `PI_LED_nPWR` is low, it will pull to ground and activate LED 1 / 2.                                   | [7] |
+| LED1   | 150060RS75000           | 0603 LED. Connected to U1 and `PI LED nPWR` CM4's power signal. Lights red when CM4 is powered on.                                                   | [8] |
+| LED2   | 150060VS75000           | 0603 LED. Connected to U2 and `PI nLED Activity` CM4's storage access indicator, blinking green when the eMMC is read or written to.                 | [9] |
+| LED3   | 150060VS75000           | 0603 LED. Connected to ground through SW1, and lights green when \texttt{nRPIBOOT} is pulled low, thus set in USB boot mode.                         | [9] |
 
 [1]: https://www.hirose.com/product/p/CL0684-4033-4-51
 [2]: https://www.te.com/en/product-2345986-1.html
-[3]: https://www.nidec-components.com/e/catalog/switch/cl-sb.pdf
-[4]: https://api.pim.na.industrial.panasonic.com/file_stream/main/fileversion/4484
-[5]: https://industrial.panasonic.com/sa/products/pt/hybrid-aluminum/models/EEHZK1V331P
+[3]: https://www.digikey.com/en/products/detail/vishay-dale/CRCW06031K00FKEAC/7928371
+[4]: https://www.digikey.com/en/products/detail/vishay-dale/CRCW06035K11FKEAC/7924012
+[5]: https://industrial.panasonic.com/ww/products/pt/os-con/models/6SVPC330M
 [6]: https://www.ti.com/lit/ds/symlink/sn74lvc1g07.pdf
 [7]: https://www.farnell.com/datasheets/4410072.pdf
+[8]: https://www.digikey.no/no/products/detail/w%C3%BCrth-elektronik/150060RS75000/4489901
+[9]: https://www.digikey.no/no/products/detail/w%C3%BCrth-elektronik/150060VS75000/4489906
 <br>
 
 

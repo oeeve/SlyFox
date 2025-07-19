@@ -157,8 +157,21 @@ A comprehensive IoT forensics dataset based on a purpose-built testbed consistin
 **TBA**
 
 <figure>
+  <img src="media/4_sw_flowchart.webp" alt="SlyFox">
+  <figcaption>Figure 9: SlyFox Software - Flowchart.</figcaption>
+</figure>
+<p>&nbsp;</p>
+
+<figure>
+  <img src="media/4_sw_sequenceDiagram.webp" alt="SlyFox">
+  <figcaption>Figure 10: SlyFox Software - Sequence diagram.</figcaption>
+</figure>
+<p>&nbsp;</p>
+
+
+<figure>
   <img src="media/4_app_concept.webp" alt="SlyFox" width="600">
-  <figcaption>Figure 9: App concept (GUI).</figcaption>
+  <figcaption>Figure 11: App concept (GUI).</figcaption>
 </figure>
 <p>&nbsp;</p>
 
